@@ -10,6 +10,8 @@ public class assasinShoot : MonoBehaviour
     public GameObject bulletPrefab;
 
     public float bulletForce = 20f;
+    public float fireRate = 0.2f;
+    float nextFire;
 
     // Update is called once per frame
     void Update()
@@ -22,8 +24,13 @@ public class assasinShoot : MonoBehaviour
 
     void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        if(Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        }
+       
     }
 }
