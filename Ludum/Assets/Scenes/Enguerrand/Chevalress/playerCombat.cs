@@ -11,7 +11,6 @@ public class playerCombat : MonoBehaviour
 
     public Vector3 Range;
     public int attackDamage = 40;
-    public float attackRate = 2f;
 
     // Update is called once per frame
     void Update()
@@ -30,6 +29,7 @@ public class playerCombat : MonoBehaviour
         //Damage them
         foreach(Collider2D enemy in hitEnemies)
         {
+            //Debug.Log("We hit" + enemy.name);
             enemy.GetComponent<enemyLife>().TakeDamage(attackDamage);
         }
     }

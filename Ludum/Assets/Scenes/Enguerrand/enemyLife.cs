@@ -35,6 +35,7 @@ public class enemyLife : MonoBehaviour
         this.enabled = false;
 
         GetComponent<Collider2D>().enabled = false;
+        GetComponent<SpriteRenderer>().enabled = false;
         this.enabled = false;
     }
 }
