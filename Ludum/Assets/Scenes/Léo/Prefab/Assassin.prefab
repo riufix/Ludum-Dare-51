@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 4197822829169657976}
   - component: {fileID: 4197822829169657979}
   - component: {fileID: 4197822829169657978}
+  - component: {fileID: 2863719879194459194}
   m_Layer: 0
   m_Name: Assassin
   m_TagString: Untagged
@@ -107,12 +108,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.121, g: 0.135, b: 0.916, a: 1}
+  m_Sprite: {fileID: 2020354275, guid: d5ad0a0b2bc3b7a4090a1882c274c4c8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.09375, y: 1.09375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -134,9 +135,9 @@ MonoBehaviour:
   passifRange: 1.5
   passifpoint: {fileID: 0}
   Player: {fileID: 0}
-  Bagarreur: {fileID: 0}
-  Assassin: {fileID: 0}
-  Chevalresse: {fileID: 0}
+  Assassin: {fileID: 4197822829169657925}
+  Bagarreur: {fileID: 6252439419809443231, guid: 5b6aecd86d8f2474d8431cd79779e90d, type: 3}
+  Chevalresse: {fileID: 3774535449738274440, guid: 89d1a76c60c50924c9a1ea714a6b0534, type: 3}
 --- !u!114 &4197822829169657978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,9 +145,29 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4197822829169657925}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a40589fb6c4bb44a84e335476bc27e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!95 &2863719879194459194
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4197822829169657925}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 44a2cb3463c3d9b419706026ecf14476, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

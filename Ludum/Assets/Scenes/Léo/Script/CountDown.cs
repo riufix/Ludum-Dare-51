@@ -10,7 +10,6 @@ public class CountDown : MonoBehaviour
 
     public float passifRange = 1.5f;
     
-    public Transform passifpoint;
     public GameObject Player;
     public GameObject Assassin;
     public GameObject Bagarreur;
@@ -62,9 +61,6 @@ public class CountDown : MonoBehaviour
     }
 
 
-    private void OnDrawGizmosSelected()
-    {
-                Gizmos.DrawWireSphere(passifpoint.position, passifRange);
-    }
+
 
 }
